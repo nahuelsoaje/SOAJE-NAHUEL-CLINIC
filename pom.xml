@@ -11,7 +11,7 @@
     </parent>
 
     <groupId>com.backend</groupId>
-    <artifactId>clinica-odontologica</artifactId>
+    <artifactId>NAHUEL-SOAJE-clinica-odontologica</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>clinica-odontologica</name>
     <description>Proyecto de Clinica Odontologica</description>

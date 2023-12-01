@@ -8,17 +8,22 @@ import java.time.LocalDateTime;
 public class TurnoSalidaDto {
     private Long id;
     private LocalDateTime fechaYHora;
-    private OdontologoSalidaDto odontologo;
-    private PacienteSalidaDto paciente;
+    private Long odontologo_id;
+    private String nombreOdontologo;
+    private Long paciente_id;
+    private String nombrePaciente;
+
 
     public TurnoSalidaDto() {
     }
 
-    public TurnoSalidaDto(Long id, LocalDateTime fechaYHora, OdontologoSalidaDto odontologo, PacienteSalidaDto paciente) {
+    public TurnoSalidaDto(Long id, LocalDateTime fechaYHora, Long odontologo_id, String nombreOdontologo, Long paciente_id, String nombrePaciente) {
         this.id = id;
         this.fechaYHora = fechaYHora;
-        this.odontologo = odontologo;
-        this.paciente = paciente;
+        this.odontologo_id = odontologo_id;
+        this.nombreOdontologo = nombreOdontologo;
+        this.paciente_id = paciente_id;
+        this.nombrePaciente = nombrePaciente;
     }
 
     public Long getId() {
@@ -37,24 +42,40 @@ public class TurnoSalidaDto {
         this.fechaYHora = fechaYHora;
     }
 
-    public OdontologoSalidaDto getOdontologo() {
-        return odontologo;
+    public Long getOdontologo_id() {
+        return odontologo_id;
     }
 
-    public void setOdontologo(OdontologoSalidaDto odontologo) {
-        this.odontologo = odontologo;
+    public void setOdontologo_id(Long odontologo_id) {
+        this.odontologo_id = odontologo_id;
     }
 
-    public PacienteSalidaDto getPaciente() {
-        return paciente;
+    public String getNombreOdontologo() {
+        return nombreOdontologo;
     }
 
-    public void setPaciente(PacienteSalidaDto paciente) {
-        this.paciente = paciente;
+    public void setNombreOdontologo(String nombreOdontologo) {
+        this.nombreOdontologo = nombreOdontologo;
+    }
+
+    public Long getPaciente_id() {
+        return paciente_id;
+    }
+
+    public void setPaciente_id(Long paciente_id) {
+        this.paciente_id = paciente_id;
+    }
+
+    public String getNombrePaciente() {
+        return nombrePaciente;
+    }
+
+    public void setNombrePaciente(String nombrePaciente) {
+        this.nombrePaciente = nombrePaciente;
     }
 
     @Override
     public String toString() {
-        return "id: " + id + " - fechaYHora: " + fechaYHora + " - odontologo: " + odontologo + " - paciente: " + paciente + '.';
+        return "id: " + id + " - fechaYHora: " + fechaYHora + " - odontologo: " + nombreOdontologo + " - paciente: " + nombrePaciente + '.';
     }
 }

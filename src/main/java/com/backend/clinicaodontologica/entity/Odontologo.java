@@ -2,20 +2,29 @@ package com.backend.clinicaodontologica.entity;
 
 import javax.persistence.*;
 
+@Entity
 @Table(name = "ODONTOLOGOS")
 public class Odontologo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
+    @Column(length = 50)
     private String matricula;
+    @Column(length = 50)
     private String nombre;
+    @Column(length = 50)
     private String apellido;
 
-    public Odontologo() {
-    }
+    public Odontologo() {}
 
     public Odontologo(String matricula, String nombre, String apellido) {
+        this.matricula = matricula;
+        this.nombre = nombre;
+        this.apellido = apellido;
+    }
+
+    public Odontologo(Long id, String matricula, String nombre, String apellido) {
+        this.id = id;
         this.matricula = matricula;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -52,6 +61,4 @@ public class Odontologo {
     public void setApellido(String apellido) {
         this.apellido = apellido;
     }
-
-
 }

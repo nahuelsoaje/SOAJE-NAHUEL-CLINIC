@@ -13,7 +13,7 @@ public class Domicilio {
     @Column(length = 50)
     private String calle;
 
-    @Column(length = 8)
+    @Column(length = 10)
     private int numero;
     @Column(length = 50)
     private String localidad;

@@ -1,7 +1,5 @@
 package com.backend.clinicaodontologica.dto.modificacion;
 
-import com.backend.clinicaodontologica.entity.Odontologo;
-import com.backend.clinicaodontologica.entity.Paciente;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
@@ -16,7 +14,7 @@ public class TurnoModificacionEntradaDto {
     private Long id;
     @FutureOrPresent(message = "La fecha no puede ser anterior al día de hoy")
     @NotNull(message = "Debe especificarse la fecha y hora del turno")
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm")
     private LocalDateTime fechaYHora;
     @NotNull(message = "el id odontologo no puede ser nulo")
     @Valid

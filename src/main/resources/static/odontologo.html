@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./scripts/odontologo.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>  </header>
+      
+    <div class="container">
+      <form action="/ingresarPaciente" method="post" id="IngresarPaciente">
+        <div class="form-header">
+          <h2>Ingresar Odontologo</h2>
+        </div>
+    
+        <div>
+        <div>
+            <label for="matricula" name="Matricula">Matricula: </label>
+            <input
+                    type="number"
+                    id="matricula"
+                    placeholder="Ingrese la matricula"
+                    name="matricula"
+                    required
+            />
+          </div>
+          <label for="nombre" name="Nombre">Nombre:</label>
+          <input
+                  type="text"
+                  id="nombre"
+                  placeholder="Ingrese el nombre del paciente"
+                  name="nombre"
+                  required
+          />
+        </div>
+        <div>
+          <label for="apellido" name="Apellido">Apellido:</label>
+          <input
+                  type="text"
+                  id="apellido"
+                  placeholder="Ingrese el apellido del paciente"
+                  name="apellido"
+                  required
+          />
+        </div>
+ 
+        <div>
+          <button
+                  type="submit"
+                  class="fa-solid fa-right-from-bracket"
+                  id="botonIngresarNuevoPaciente"
+          >Guardar Paciente
+          </button>
+    
+        </div>
+    
+    
+    
+      </form>
+    
+    </div>
+</body>
+</html>

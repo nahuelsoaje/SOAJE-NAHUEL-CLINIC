@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./scripts/paciente.js"></script>
+</head>
+
+<body>
+        <header>  </header>
+      
+      <div class="container">
+        <form action="/ingresarPaciente" method="post" id="IngresarPaciente">
+          <div class="form-header">
+            <h2>Ingresar Paciente</h2>  <p> <a href="./odontologo.html">ingresar Odontologo</a></p>
+          </div>
+      
+          <div>
+            <label for="nombre" name="Nombre">Nombre:</label>
+            <input
+                    type="text"
+                    id="nombre"
+                    placeholder="Ingrese el nombre del paciente"
+                    name="nombre"
+                    required
+            />
+          </div>
+          <div>
+            <label for="apellido" name="Apellido">Apellido:</label>
+            <input
+                    type="text"
+                    id="apellido"
+                    placeholder="Ingrese el apellido del paciente"
+                    name="apellido"
+                    required
+            />
+          </div>
+          <div>
+            <label for="dni" name="dni">Dni: </label>
+            <input
+                    type="number"
+                    id="dni"
+                    placeholder="Ingrese el dni del Paciente"
+                    name="dni"
+                    required
+            />
+          </div>
+          <div>
+              <label for="fechaIngreso" name="fechaIngreso">Fecha de Ingreso: </label>
+              <input
+                      type="date"
+                      id="fechaIngreso"
+                      placeholder="Ingrese la fecha de Ingreso del paciente"
+                      name="fechaIngreso"
+                      required
+              />
+            </div>
+          <div>
+          </div>
+          <h3>Ingresar Domicilio del paciente</h3>
+          <div>
+            <label for="calle" name="Calle">Calle:</label>
+            <input
+                    type="text"
+                    id="calle"
+                    placeholder="Ingrese la calle del domicilio"
+                    name="calle"
+                    required
+            />
+          </div>
+          <div>
+            <label for="numero" name="Numero">Número:</label>
+            <input
+                    type="number"
+                    id="numero"
+                    placeholder="Ingrese el número del domicilio"
+                    name="numero"
+                    required
+            />
+          </div>
+          <div>
+            <label for="localidad" name="Localidad">Localidad: </label>
+            <input
+                    type="text"
+                    id="localidad"
+                    placeholder="Ingrese localidad del Domicilio"
+                    name="localidad"
+                    required
+            />
+          </div>
+          <div>
+              <label for="provincia" name="Provincia">Provincia: </label>
+              <input
+                      type="text"
+                      id="provincia"
+                      placeholder="Ingrese la provincia del Domicilio"
+                      name="provincia"
+                      required
+              />
+            </div>
+          <div>
+            <button
+                    type="submit"
+                    class="fa-solid fa-right-from-bracket"
+                    id="botonIngresarNuevoPaciente"
+            >Guardar Paciente
+            </button>
+      
+          </div>
+      
+      
+      
+        </form>
+      
+      </div>
+</body>
+</html>

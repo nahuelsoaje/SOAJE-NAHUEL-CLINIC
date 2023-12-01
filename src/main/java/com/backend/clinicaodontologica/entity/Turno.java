@@ -2,7 +2,7 @@ package com.backend.clinicaodontologica.entity;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
-
+@Entity
 @Table(name = "TURNOS")
 public class Turno {
 
@@ -24,6 +24,13 @@ public class Turno {
 
     public Turno(LocalDateTime fechaYHora, Odontologo odontologo, Paciente paciente) {
 
+        this.fechaYHora = fechaYHora;
+        this.odontologo = odontologo;
+        this.paciente = paciente;
+    }
+
+    public Turno(Long id, LocalDateTime fechaYHora, Odontologo odontologo, Paciente paciente) {
+        this.id = id;
         this.fechaYHora = fechaYHora;
         this.odontologo = odontologo;
         this.paciente = paciente;
